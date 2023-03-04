@@ -1,4 +1,4 @@
-import NavItem from "@/components/navigation/navbar/nav-item/nav-item";
+import NavItem from "@/components/navmenu/navbar/nav-item/nav-item";
 import Link from "next/link";
 
 

@@ -1,5 +1,5 @@
 import styles from "./navmenu.module.css";
-import Navbar from "@/components/navigation/navbar/navbar";
+import Navbar from "@/components/navmenu/navbar/navbar";
 
 
 

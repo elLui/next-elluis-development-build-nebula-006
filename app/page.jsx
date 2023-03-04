@@ -5,11 +5,14 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styled from "styled-components";
 
+
+
+
 const HomeMain = styled.main`
 
 
-	
-	
+
+
 
 `;
 
