@@ -21,9 +21,9 @@ export default function RootLayout( { children } ) {
 
 		<html lang="en">
 		<body>
-		{/* // BackgroundVideo === z-index: -10 */}
-		<BackgroundVideo/>
+		{/* // BackgroundVideo === z-index: -10 */ }
 		<GlobalStyle/>
+		<BackgroundVideo/>
 		<StyledComponentsRegistry>
 			{ children }
 		</StyledComponentsRegistry>
