@@ -9,11 +9,13 @@ const BackgroundVideoStyles = styled.div`
     background-attachment: scroll;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     object-position: center;
     object-fit: fill;
-    opacity: 0.125;
+    z-index: -10;
   }
 
   @keyframes play {
@@ -22,9 +24,6 @@ const BackgroundVideoStyles = styled.div`
       //transform: scale(0.25);
 
     }
-
-
-
 `;
 
 

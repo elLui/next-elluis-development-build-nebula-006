@@ -3,9 +3,8 @@ import 'sanitize.css';
 import 'sanitize.css/forms.css';
 import 'sanitize.css/typography.css';
 import BackgroundVideo from "@/components/background/background";
-
-import StyledComponentsRegistry from "@/lib/registry";
 import GlobalStyle from "@/styles/globals";
+import StyledComponentsRegistry from "@/lib/registry";
 import Script from "next/script";
 
 
@@ -22,9 +21,10 @@ export default function RootLayout( { children } ) {
 
 		<html lang="en">
 		<body>
+		{/* // BackgroundVideo === z-index: -10 */}
+		<BackgroundVideo/>
 		<GlobalStyle/>
 		<StyledComponentsRegistry>
-			<BackgroundVideo/>
 			{ children }
 		</StyledComponentsRegistry>
 		</body>
