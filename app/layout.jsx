@@ -5,7 +5,7 @@ import 'sanitize.css/typography.css';
 import BackgroundVideo from "@/components/background/background";
 import GlobalStyle from "@/styles/globals";
 import StyledComponentsRegistry from "@/lib/registry";
-import Script from "next/script";
+import styled from "styled-components";
 
 
 
@@ -16,18 +16,28 @@ export const metadata = {
 
 }
 
+const LayoutBody = styled.body`
+
+  background-color: hotpink;
+  
+  
+`;
+
+
+
+
 export default function RootLayout( { children } ) {
 	return (
 
 		<html lang="en">
-		<body>
+		<LayoutBody>
 		{/* // BackgroundVideo === z-index: -10 */ }
 		<GlobalStyle/>
-		<BackgroundVideo/>
+		{/* <BackgroundVideo/> */ }
 		<StyledComponentsRegistry>
 			{ children }
 		</StyledComponentsRegistry>
-		</body>
+		</LayoutBody>
 		</html>
 
 	)
